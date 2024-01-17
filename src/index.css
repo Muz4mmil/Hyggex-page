@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bg-gradient {
+    @apply bg-gradient-to-b from-blue-up to-blue-down text-white
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-b from-blue-up to-blue-down text-transparent bg-clip-text
+  }
+
+  .card-front {
+    background: linear-gradient(225deg, #051A91 0%, #061C93 5%, #2284F1 80%, #1F80EB 95%);
+  }
+
+  .card-back {
+    background: linear-gradient(225deg, #071844 0%, #071844 5%, #2D87B6 80%, #2D87B6 95%);
+  }
+}

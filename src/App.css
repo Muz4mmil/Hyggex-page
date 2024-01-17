@@ -1,0 +1,26 @@
+.card {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front {
+  transform: rotateY(0deg) translateX(50%);
+}
+
+.card-back {
+  transform: rotateY(180deg) translateX(50%);
+}
